@@ -22,7 +22,7 @@ La herramienta **ifconfig** nos permite configurar nuestras interfaces de red, s
  Las interfaces de red pueden estar tanto activas como inactivas y como puedes adivinar, esto puede administrarse mediante el mismo comando *ifconfig* 
  - Desactivar una interfaz de red (eth0):  
  
-		`$ ifconfig eth0 down `
+		$ ifconfig eth0 down 
 
 Luego de ingresar el comando podemos ver que si vemos nuestras interfaces de red con ifconfig eth0 ya no está. Sin embargo, no es que la interfaz se haya eliminado del sistema, sino que ha sido "apagada". Esto puede verificarse ingresando `ifconfig -a` 
 
@@ -30,7 +30,7 @@ Luego de ingresar el comando podemos ver que si vemos nuestras interfaces de red
 
 Luego de apagar la interfaz de red *eth0* pasaremos a activarla nuevamente, ingresando 
 
-	 `$ ifconfig eth0 up` 
+	 $ ifconfig eth0 up 
 
 - **Cambiar dirección IP o MAC de nuestra interfaz**
 Para cambiar la dirección IP de nuestra interfaz basta con ingresar 
@@ -50,6 +50,7 @@ Para cambiar nuestra dirección MAC es necesario apagar la interfaz y luego camb
 > Según la documentación de linux (`man ifconfig`)  se recomienda cambiar de `ifconfig a ip link ya que ifconfig se encuentra a los días de hoy, *obsoleto*.
 
 **Comando ip**
+
 Como mencionamos anteriormente, ifconfig se encuentra obsoleto y para reemplazar este nos encontramos con el comando `ip` que a grandes rasgos tiene una sintaxis de la forma
 
     ip [OPTION] OBJECT {COMMAND | help}
