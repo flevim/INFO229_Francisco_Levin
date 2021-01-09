@@ -13,9 +13,11 @@ Este tutorial se llevará a cabo con [Raspbian Buster](https://largefiles.pimyli
  
  **Instalación de Privoxy**
  1. Antes de instalar Privoxy en nuestra Raspberry pi necesitamos actualizar los paquetes de Raspbian
+
  `$ sudo apt update && sudo apt upgrade` 
 
 2. Ahora podemos proceder a instalar Privoxy con el gestor de paquetes apt 
+
 ``$ sudo apt install privoxy ``
 
 Luego de instalado *Privoxy* debemos configurar este para aceptar conexiones desde otros dispositivos locales. 
