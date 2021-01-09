@@ -1,6 +1,6 @@
 ﻿## Pelican: Generador de sitios estáticos
 
-[Pelican](https://blog.getpelican.com/) es un generador de sitios estáticos escrito en Python, esto quiere decir que el contenido de la página se genera antes de tiempo, a demanda de lo que se necesite. Esto de por sí tiene tanto ventajas como desventajas como desventajas, de las cuales, podemos decir algunas:
+[Pelican](https://blog.getpelican.com/) es un generador de sitios estáticos escrito en Python. Esto básicamente nos dice que el contenido de la página se genera tal cual como está almacenada, en contraste con las páginas web dinámicas que son generadas por una aplicación web. Esto de por sí tiene tanto ventajas como desventajas, de las cuales, podemos mencionar algunas:
 
 **Ventajas**
 -  *Portabilidad*, funcionan en cualquier servidor.
