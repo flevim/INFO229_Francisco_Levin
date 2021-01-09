@@ -112,7 +112,7 @@ Para mostrar los puertos involucrados podemos iniciar iftop de la forma
 
     $ sudo iftop -Pi <interfaz>
    
-  Para mostrar el tráfico en bytes y no en bits 
+  Para mostrar el tráfico en bytes 
   
 
     $ sudo iftop -i <interfaz> -B
