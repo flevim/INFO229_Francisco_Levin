@@ -62,6 +62,7 @@ Ahora procederemos a agregar **contenido** a nuestro sitio
  ### Agregar contenido 
 
 **Artículos y páginas**
+
 *Pelican* considera que los "artículos" son contenido cronológico, como publicaciones en un blog y, por lo tanto, están asociados con una fecha.
 
 La idea detrás de las "páginas" es que generalmente no son de naturaleza temporal y se utilizan para contenido que no cambia con mucha frecuencia (por ejemplo, páginas "Acerca de" o "Contacto").
