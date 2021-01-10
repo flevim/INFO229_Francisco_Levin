@@ -1,7 +1,7 @@
 ﻿
 ## Monitoreo de redes en Linux
 
-Existen muchas herramientas de monitoreo de red hoy en día, donde algunas se gestionan con GUI (Graphic User Interface) y otras en CLI (Command Line Interface). Sin embargo las herramientas usadas en este tutorial son gestionadas desde la terminal. 
+Existen muchas herramientas de monitoreo de red hoy en día, donde algunas se gestionan con GUI (Graphic User Interface) y otras en CLI (Command Line Interface). Sin embargo, las herramientas usadas en este tutorial son gestionadas desde la terminal. 
 
 ## ss 
 El comando **ss** muestra información sobre los sockets del sistema. Si no se dan argumentos muestra los sockets TCP que tienen una conexión establecida actualmente
