@@ -26,7 +26,7 @@ O si vas a utilizar Markdown para generar el sitio:
     python -m pip install "pelican[markdown]"
 
 
-Antes de iniciar se recomienda estar en un entorno virtual de Python donde manejar la versión y nuevas dependencias que se puedan requerir. También si se encuentra en Linux, el proceso de instalación de dependencias con pip no requerirá permisos **root**.
+Antes de iniciar se recomienda estar en un entorno virtual de Python donde manejar la versión y nuevas dependencias que se puedan requerir. También si se encuentra en Linux, el proceso de instalación de dependencias con pip no requerirá privilegios **root**.
 
     virtualenv ~/pelicanenv
     source ~/pelicanenv/bin/activate

@@ -1,0 +1,51 @@
+version: '3.6'  
+services:
+  rabbitmq:
+   image: rabbitmq:3-management
+   ports:
+      # The standard AMQP protocol port
+      - '5673:5673'
+      # HTTP management UI
+      - '15673:15673'
+   networks:
+      - network
+   container_name: rabbitmq
+   restart: 'always'
+
+  bot_weather_search:
+   build:
+      context: ./bot_weather_search
+   container_name: bot_weather_search
+   networks:
+      - network
+   environment:
+      - RABBITMQ_HOST=rabbitmq
+   depends_on:
+      - rabbitmq
+  
+  bot_slack_reader:
+   build:
+     context: ./bot_slack_reader
+   container_name: bot_slack_reader
+   environment:
+      - RABBITMQ_HOST=rabbitmq
+   depends_on:
+      - rabbitmq
+   ports:
+      - 3000:3000   
+   networks:
+      - network
+
+  bot_slack_writer:
+   build:
+     context: ./bot_slack_writer
+   container_name: bot_slack_writer
+   environment:
+      - RABBITMQ_HOST=rabbitmq
+   depends_on:
+      - rabbitmq   
+   networks:
+      - network
+
+networks:
+  network: {}

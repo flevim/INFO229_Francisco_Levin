@@ -1,0 +1,4 @@
+pika==1.1.0
+slackclient==2.9.1
+slackeventsapi==2.2.1
+flask==1.1.2
